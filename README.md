@@ -1,1 +1,1 @@
-# macugi-game-project
+# macigi-game-project
