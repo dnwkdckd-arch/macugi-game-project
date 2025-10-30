@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>맞추기 게임</title>
+  <title>맞히기 게임</title>
   <style>
     body {
       font-family: "Pretendard", sans-serif;
@@ -110,7 +110,7 @@
 <body>
   <!--  메인 -->
   <div id="main-screen" class="screen" style="display: flex;">
-    <h1>맞추기 게임</h1>
+    <h1>맞히기 게임</h1>
     <div>
       <!-- 카테고리 -->
       <div class="tooltip-container">
@@ -147,7 +147,7 @@
   <!--  숫자야구 -->
   <div id="game-screen" class="screen">
     <h1> 4자리 숫자야구</h1>
-    <p>서로 다른 숫자 4개를 맞춰보세요! (시도 횟수: 최대 6번)</p>
+    <p>서로 다른 숫자 4개를 맞혀보세요! (시도 횟수: 최대 6번)</p>
     <input type="text" id="userInput" placeholder="예: 1234" maxlength="4" />
     <button id="checkBtn">확인</button>
     <p class="info" id="triesInfo">현재 시도: 0 / 6</p>
@@ -163,7 +163,7 @@
 
     document.getElementById("categoryBtn").addEventListener("click", () => showScreen("category-screen"));
     document.getElementById("backToMainBtn").addEventListener("click", () => showScreen("main-screen"));
-    document.getElementById("classicBtn").addEventListener("click", () => alert("클래식 모드는 준비 중입니다! 🚧"));
+    document.getElementById("classicBtn").addEventListener("click", () => alert("클래식 모드는 준비 중입니다! "));
     document.getElementById("mathLogicBtn").addEventListener("click", () => {
       showScreen("game-screen");
       startGame();
@@ -218,7 +218,7 @@
 
       if (strike === 4) {
         setTimeout(() => {
-          alert(` 정답입니다! (${tries}번 만에 맞추셨습니다!)`);
+          alert(` 정답입니다! (${tries}번 만에 맞히셨습니다!)`);
           showScreen("category-screen");
         }, 100);
         return;
@@ -238,3 +238,4 @@
   </script>
 </body>
 </html>
+
